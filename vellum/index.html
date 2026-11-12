@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vellum — Curated Residences</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="site-inner">
+    <a class="brand" href="#">VELLUM <small>Curated Residences</small></a>
+    <nav class="site-nav">
+      <a class="active">Listings</a>
+      <a>Neighborhoods</a>
+      <a>Represent a Property</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-eyebrow">Private Inventory — Updated Weekly</div>
+    <h1>Nine addresses.<br><em>One</em> standard.</h1>
+    <p class="lede">A hand-vetted register of architecturally significant homes. Every listing below has passed inspection, provenance review, and a walkthrough by our editorial team before it earns a place in the ledger.</p>
+    <div class="hero-stats">
+      <div class="hstat"><b id="statCount">9</b><span>Active Listings</span></div>
+      <div class="hstat"><b>14</b><span>Days, Avg. to Offer</span></div>
+      <div class="hstat"><b>$4.1M</b><span>Median Price</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="filters">
+  <div class="filters-inner">
+    <div class="field">
+      <label for="fSearch">Search address or neighborhood</label>
+      <input id="fSearch" type="text" placeholder="e.g. Blackwell Ridge, terrace, view">
+    </div>
+    <div class="field">
+      <label for="fBeds">Bedrooms</label>
+      <select id="fBeds">
+        <option value="0">Any</option>
+        <option value="2">2+</option>
+        <option value="3">3+</option>
+        <option value="4">4+</option>
+        <option value="5">5+</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="fPrice">Max price</label>
+      <select id="fPrice">
+        <option value="0">Any</option>
+        <option value="2000000">Up to $2M</option>
+        <option value="4000000">Up to $4M</option>
+        <option value="6000000">Up to $6M</option>
+        <option value="10000000">Up to $10M</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="fSort">Sort</label>
+      <select id="fSort">
+        <option value="curated">Curated order</option>
+        <option value="price-asc">Price, low to high</option>
+        <option value="price-desc">Price, high to low</option>
+        <option value="sqft-desc">Largest first</option>
+      </select>
+    </div>
+    <div class="result-count" id="resultCount">9 results</div>
+  </div>
+</div>
+
+<section class="listings">
+  <div class="wrap">
+    <div class="listings-head">
+      <h2>The Ledger</h2>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span class="brand">VELLUM</span>
+    <span>Demonstration interface — sample data, no listings are real. Built as a front-end prototype.</span>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay">
+  <div class="sheet" id="sheet"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
